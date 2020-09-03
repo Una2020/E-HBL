@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Sign In | UNACARGO A Pleasure to work with</title>
+    <!-- Favicon-->
+    <link rel="icon" href="UNACARGO.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .alert alert-success {
+            width: 100%;
+            position: fixed;
+            top:0px;
+            z-index: 100000;
+            padding: 0;
+            font-size: 15px;
+        }
+    </style>
+
+    <style type="text/css">
+        body {
+            background: url(images/track-banner.jpg) no-repeat center center fixed #000;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+            
+    <script type="text/javascript">
+        function ShowMessage(message, messagetype) {
+            var cssclass;
+            var messageBoxcolor;
+            switch (messagetype) {
+                case 'Success':
+                    cssclass = 'alert-success'
+                    messageBoxcolor ='background-color: #006600;'
+                    break;
+                case 'Error':
+                    cssclass = 'alert-danger'
+                    messageBoxcolor ='background-color: Red;'
+                    break;
+                case 'Warning':
+                    cssclass = 'alert-warning'
+                    messageBoxcolor ='background-color: Yellow;'
+                    break;
+                default:
+                    cssclass = 'alert-info'
+                    messageBoxcolor ='background-color: Blue;'
+            }
+            $('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%;' + messageBoxcolor  +' -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>');
+        }
+    </script>
+
+</head>
+
+<body class="login-page" style="background-image: url('images/track-banner.jpg'); width: 100%; height: 100%;">
+     
+    <div class="login-box" >
+        <div class="logo">
+            <a href="javascript:void(0);"><h3 style="color: #0179C2; font-family: Arial, Helvetica, sans-serif; font-weight: bold">UNACARGO CUSTOMER PORTAL</h3><b></b></a>
+            <small><h4 style="color: #0179C2; font-family: Arial, Helvetica, sans-serif; font-weight: bold">A Pleasure to work with</h4></small>
+        </div>
+        <div>
+              <div class="messagealert"   id="alert_container"  >
+        </div>
+        
+        <div class="card" >
+            <div class="body">
+                <form method="POST" action="./UCPSLOGIN" id="sign_in">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="enSunNLIKc5g5Srng4YMey6RTWhnFfYiBRkyUqOuLbI1SdtZsD/wOp1kJ5A4llZlo1AWSoXIeFZjWRowzC75sq/pQdZaLYOGbsOI6yM5RD5gRpmcEQ1X2GaN/8q84jfNfbDFAa+oqN1LmEqA2Klzm7Z7l07BsFQ7Y0HgXR8GYk9kOH9yCxCYLjCFkoAZU9uRReyIvhCt+EWGYX9uBKzHYB1VslrdUZfCc8yDWsjK00kah1g6bzRzt8k649MeVH8buTUznqibp5vOQm2pMsI1S+yVRW0XfBbhYofgHLCJqpCUo4+DSd1hmK0kPiE5RxeysQUstrN2r+rtSnXMat/JA/0eboEwAGZ1n8HuIC4U9tc=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['sign_in'];
+if (!theForm) {
+    theForm = document.sign_in;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2FBD40F9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="qNN6vTOxRoWgWt1xdMaXiArd+YkEeUBi70Qt6s7sOiqc2sh7vEilxabzf5v97DsuWXXGSYWM2C06Rpvky/ZL3zMN2paLWbnkfs3MOmh7xotfWru7bg4JlzYgT2FX6AuJUM5SKwFHFfZdKVjaFLPhD/WlGTLzmUeEYZXMTFS+DMKmvbWkloKrFXaJX+/RVFogAsGgjhntCjoEMsE+76WUHwUvnuYrQ0PP3y76n/73VHI=" />
+</div>
+                    <div class="msg">Sign in to start your session</div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">person</i>
+                        </span>
+                        <div class="form-line">
+                            
+                            <input name="Txt_UserName" type="text" id="Txt_UserName" class="form-control" placeholder="Username" />
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            
+                            <input name="Txt_Password" type="password" id="Txt_Password" class="form-control" placeholder="password" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {document.getElementById(&#39;Btn_Submit&#39;).click();return false;}} else {return true}; " />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="button" name="Btn_Submit" value="SIGN IN" onclick="javascript:__doPostBack(&#39;Btn_Submit&#39;,&#39;&#39;)" id="Btn_Submit" class="btn btn-block bg-pink waves-effect" class="alert alert-danger" style="font-weight:bold;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="button" name="Btn_WithOutSignIn" value="WITHOUT SIGN IN" onclick="javascript:__doPostBack(&#39;Btn_WithOutSignIn&#39;,&#39;&#39;)" id="Btn_WithOutSignIn" class="btn btn-block bg-pink waves-effect" class="alert alert-danger" style="font-weight:bold;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="button" name="Btn_ContainerStatus" value="CONTAINER STATUS" onclick="javascript:__doPostBack(&#39;Btn_ContainerStatus&#39;,&#39;&#39;)" id="Btn_ContainerStatus" class="btn btn-block bg-pink waves-effect" class="alert alert-danger" style="font-weight:bold;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input type="button" name="Btn_UniversalArlnTracking" value="UNIVERSAL AIRLINE TRACKING" onclick="javascript:__doPostBack(&#39;Btn_UniversalArlnTracking&#39;,&#39;&#39;)" id="Btn_UniversalArlnTracking" class="btn btn-block bg-pink waves-effect" class="alert alert-danger" style="font-weight:bold;" />
+                        </div>
+                    </div>
+                    <div class="row m-t-15 m-b--20">
+                        <div class="col-xs-6">
+                            <a href="SignUp.aspx">Register Now!</a>
+                        </div>
+                        <div class="col-xs-6 align-right">
+                            <a href="ForgotPassword.aspx">Forgot Password?</a>
+                        </div>
+                        <span id="Lbl_Message" style="color:Red;font-size:10pt;font-weight:bold;"></span>
+                        <div data-val-headertext="Following Fields are Mandatory" data-val-showmessagebox="True" data-val-showsummary="False" data-val-validationGroup="SignIn" id="ValidationSummary1" data-valsummary="true" style="width:196px;display:none;">
+
+</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Jquery Core Js -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+
+    <!-- Validation Plugin Js -->
+    <script src="plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/examples/sign-in.js"></script>
+</body>
+
+</html>
